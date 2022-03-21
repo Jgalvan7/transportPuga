@@ -1,4 +1,27 @@
 extend components/template.pug
 block Content
     main
-        p Hola mundo
+        .container__hero
+            h1 Servicio de Transporte Profesional
+            .container__hero--img
+                img(src="", alt="Imagen de furgoneta")
+                p Lo llevamos donde usted necesita
+            button Contactanos
+        .container__servicios
+            h2 Nuestros Servicios
+            p TRANSPORT PUGA EXPRESS S.L opera conforme a los más altos estándares de servicio en todo aspecto de nuestro trabajo. Gracias a nuestra enorme flota y profundo conocimiento de las calles de Ogíjares, podemos ofrecerle servicios diversos y especializados que se ajusten a todas sus necesidades. Conozca los servicios que ofrecemos.
+        .container__comentarios
+            h2 Nuestros clientes opinan
+            .comentarios__clientes
+        .container__contacto
+            h2 ¡Queremos saber de usted!
+            p C. Zamora, 130, 18151 Ogíjares, Granada, Spain
+            p Teléfonos: 678 66 11 73 / 678 66 11 74
+            p Email: transcopar@gmail.com
+            .container__contacto--map
+                iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3180.8374341795798!2d-3.61787438534868!3d37.13278245660836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fb0c8c651487%3A0x43e36c112699c901!2sC.%20Zamora%2C%20130%2C%2018151%20Og%C3%ADjares%2C%20Granada%2C%20Espa%C3%B1a!5e0!3m2!1ses!2spt!4v1647860334266!5m2!1ses!2spt", width="400", height="300", style="border:0;", allowfullscreen="", loading="lazy")
+            .container__contacto--network
+                a(href=""): img(src="", alt="Logo Facebook")
+                a(href=""): img(src="", alt="Logo Instagram")
+                a(href=""): img(src="", alt="Logo Linkedin")
+                a(href=""): img(src="", alt="Logo Twitter")
