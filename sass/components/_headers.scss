@@ -1,0 +1,43 @@
+header {
+    position: fixed;
+    width: 100%;
+    height: 125px;
+    background-image: url(../assets/images/bgPuga.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.container__logo {
+    padding: 10px;
+    &--img {
+        width: 300px;
+        img{
+            width: 100%;
+        }
+    }
+    &--datos {
+        // To do...
+        display: none;
+    }
+}
+
+.container__menu {
+    .menu__mobile {
+        background-color: $color-primario;
+        &--icon {
+            width: 34px;
+            padding: 2px;
+            border-right: 1px solid $color-claro;
+        }
+        &--text {
+            // To do...
+            display: none;
+        }
+    }
+    .menu__desktop {
+        // To do...
+        display: none;
+    }
+}

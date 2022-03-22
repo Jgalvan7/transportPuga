@@ -1,6 +1,6 @@
 // Variables
 $color-primario: #000;
-$color-secundario: #86d615;
+$color-secundario: #7E0C0C;
 $color-claro: #ebebeb;
 $Fuente1: 'Mulish', sans-serif;
 $Fuente2: 'Oswald', sans-serif;
@@ -62,6 +62,29 @@ body {
     background-color: $color-primario;
     @include titulos($Fuente1);
     @include font-size(16px);
+}
+
+main {
+    position: relative;
+    top: 125px;
+}
+
+.container__bnt {
+    width: 200px;
+        margin: 15px auto;
+        padding: 5px;
+        font-weight: bold;
+        text-transform: uppercase;
+        border: 2px solid $color-claro;
+        border-radius: 5px;
+        color: $color-claro;
+        background-color: $color-primario;
+        $color-shadow: cambiarColor($color-claro,0.8);
+        box-shadow: 2px 3px 10px 0px $color-shadow;
+        &:hover {
+            width: 190px;
+            box-shadow: none;
+        }
 }
 
 .hidden {

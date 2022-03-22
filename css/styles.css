@@ -511,6 +511,188 @@ body {
   line-height: 1.5rem;
 }
 
+main {
+  position: relative;
+  top: 125px;
+}
+
+.container__bnt {
+  width: 200px;
+  margin: 15px auto;
+  padding: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 2px solid #ebebeb;
+  border-radius: 5px;
+  color: #ebebeb;
+  background-color: #000;
+  -webkit-box-shadow: 2px 3px 10px 0px rgba(235, 235, 235, 0.8);
+          box-shadow: 2px 3px 10px 0px rgba(235, 235, 235, 0.8);
+}
+.container__bnt:hover {
+  width: 190px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .hidden {
   display: none;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  height: 125px;
+  background-image: url(../assets/images/bgPuga.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.container__logo {
+  padding: 10px;
+}
+.container__logo--img {
+  width: 300px;
+}
+.container__logo--img img {
+  width: 100%;
+}
+.container__logo--datos {
+  display: none;
+}
+
+.container__menu .menu__mobile {
+  background-color: #000;
+}
+.container__menu .menu__mobile--icon {
+  width: 34px;
+  padding: 2px;
+  border-right: 1px solid #ebebeb;
+}
+.container__menu .menu__mobile--text {
+  display: none;
+}
+.container__menu .menu__desktop {
+  display: none;
+}
+
+.container__hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 50px 10px;
+  background-image: url(../assets/images/bgPuga.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container__hero--title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+  font-size: 1.375rem;
+  line-height: 2.0625rem;
+}
+.container__hero--img {
+  position: relative;
+}
+.container__hero--img img {
+  height: 400px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.container__hero--img p {
+  position: absolute;
+  top: 40px;
+  right: 15px;
+  width: 150px;
+  text-align: center;
+  font-weight: bold;
+}
+@media only screen and (min-width: 650px) {
+  .container__hero--img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+.container__servicios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 10px;
+  background-color: #7E0C0C;
+}
+.container__servicios--title {
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-size: 1.375rem;
+  line-height: 2.0625rem;
+}
+.container__servicios--text {
+  text-align: justify;
+}
+.container__comentarios--title {
+  font-size: 22px;
+  font-size: 1.375rem;
+  line-height: 2.0625rem;
+}
+.container__contacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  background-image: url(../assets/images/Foto-asfalto.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: -230px;
+}
+.container__contacto--title {
+  margin: 30px 0 10px;
+  font-weight: bold;
+  text-shadow: 2px 2px 3px #000;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+}
+.container__contacto--text {
+  text-align: center;
+}
+.container__contacto--network {
+  margin: 10px 0;
+}
+.container__contacto--network a img {
+  width: 48px;
 }
