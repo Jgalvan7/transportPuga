@@ -82,8 +82,10 @@ main {
         $color-shadow: cambiarColor($color-claro,0.8);
         box-shadow: 2px 3px 10px 0px $color-shadow;
         &:hover {
+            padding: 5.5px 0;
             width: 190px;
             box-shadow: none;
+            @include font-size(15px);
         }
 }
 

@@ -530,9 +530,13 @@ main {
           box-shadow: 2px 3px 10px 0px rgba(235, 235, 235, 0.8);
 }
 .container__bnt:hover {
+  padding: 5.5px 0;
   width: 190px;
   -webkit-box-shadow: none;
           box-shadow: none;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  line-height: 1.40625rem;
 }
 
 .hidden {
@@ -551,6 +555,12 @@ header {
 }
 
 .container__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 10px;
 }
 .container__logo--img {
@@ -561,6 +571,23 @@ header {
 }
 .container__logo--datos {
   display: none;
+}
+@media only screen and (min-width: 650px) {
+  .container__logo--datos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .container__logo--datos p {
+    margin: 6px;
+  }
 }
 
 .container__menu .menu__mobile {
@@ -673,7 +700,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px;
+  padding: 10px 10px 50px;
   background-image: url(../assets/images/Foto-asfalto.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -695,4 +722,25 @@ header {
 }
 .container__contacto--network a img {
   width: 48px;
+}
+
+footer {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin-top: 95px;
+  padding: 5px 0;
+  border-top: 1px solid #ebebeb;
+  z-index: 100;
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+}
+footer p {
+  margin: 0;
 }
