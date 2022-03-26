@@ -22,39 +22,75 @@
           <div class="menu__mobile--text">
             <p id="seccionMenu"></p>
           </div>
+          <div class="menu__mobile--network"><a href=""><img src="../assets/icons/facebook.svg" alt="Logo Facebook"></a><a href=""><img src="../assets/icons/instagram.svg" alt="Logo Instagram"></a><a href=""><img src="../assets/icons/linkedin.svg" alt="Logo Linkedin"></a><a href=""><img src="../assets/icons/twitter.svg" alt="Logo Twitter"></a></div>
         </div>
-        <div class="menu__desktop"></div>
+        <div class="menu__desktop"><a href="">Home</a><a href="">Servicios</a><a href="">Flota</a><a href="">Nosotros</a><a href="">Contacto</a><a href="">Preguntas</a></div>
       </div>
     </header>
     <main>
+      <div class="hidden" id="modal"></div>
       <div class="container__hero">
-        <h1 class="container__hero--title">Servicio de Transporte Profesional</h1>
-        <div class="container__hero--img"><img src="../assets/images/furgoneta.png" alt="Imagen de furgoneta">
-          <p class="container__hero--text">Lo llevamos donde usted necesita</p>
+        <div class="contenido__hero">
+          <h1 class="contenido__hero--title">Servicio de Transporte Profesional</h1>
+          <div class="contenido__hero--img"><img src="../assets/images/furgoneta.png" alt="Imagen de furgoneta">
+            <div class="contenido__hero--text">
+              <p class="contenido__hero--textInit">Lo llevamos donde usted necesita</p>
+              <p class="contenido__hero--textExtend">Somos una empresa especialista en entregas a domicilio, dedicados desde 1995 a la distribución en la provincia de Granada.</p>
+            </div>
+          </div>
+          <button class="container__bnt contenido__hero--bnt">Contactanos</button>
         </div>
-        <button class="container__bnt">Contactanos</button>
       </div>
       <div class="container__servicios">
         <h2 class="container__servicios--title">Nuestros Servicios</h2>
         <p class="container__servicios--text">TRANSPORT PUGA EXPRESS S.L opera conforme a los más altos estándares de servicio en todo aspecto de nuestro trabajo. Gracias a nuestra enorme flota y profundo conocimiento de las calles de Ogíjares, podemos ofrecerle servicios diversos y especializados que se ajusten a todas sus necesidades. Conozca los servicios que ofrecemos.</p>
         <button class="container__bnt">Servicios</button>
-        <div class="container__servicios--boxes"></div>
+        <div class="container__servicios--boxes">
+          <div class="cajaServicio">
+            <h3 class="cajaServicio__title">Servicio Express: en 2h al cliente</h3>
+            <div class="cajaServicio__imagen"><img src="../assets/images/furgo_fast.png" alt="Imagen de prueba para practicar"/></div>
+            <div class="cajaServicio__contenido">
+              <p class="cajaServicio__contenido--text">Un servicio de entrega rápido que mantiene toda la calidad que caracteriza a nuestros transportes y entregas.</p>
+              <!--button.servicioButton Saber mas-->
+            </div>
+          </div>
+          <div class="cajaServicio">
+            <h3 class="cajaServicio__title">Servicio de logística de terceros</h3>
+            <div class="cajaServicio__imagen"><img src="../assets/images/third_service.jpg" alt="Imagen de prueba para practicar"/></div>
+            <div class="cajaServicio__contenido">
+              <p class="cajaServicio__contenido--text">Nuestros servicio se distingue del resto por nuestra consistencia, confiabilidad, comunicación y calidad.</p>
+              <!--button.servicioButton Saber mas-->
+            </div>
+          </div>
+          <div class="cajaServicio">
+            <h3 class="cajaServicio__title">Servicio de carga de mercancía</h3>
+            <div class="cajaServicio__imagen"><img src="../assets/images/red_truck.png" alt="Imagen de prueba para practicar"/></div>
+            <div class="cajaServicio__contenido">
+              <p class="cajaServicio__contenido--text">Sabemos que es importante llegar a su destino a tiempo y con comodidad, y eso es lo que le garantizamos.</p>
+              <!--button.servicioButton Saber mas-->
+            </div>
+          </div>
+        </div>
       </div>
-      <!--.container__comentarios
-      h2.container__comentarios--title Nuestros clientes opinan
-      #comentBox.container__comentarios--boxes
-      -->
+      <div class="container__comentarios">
+        <h2 class="container__comentarios--title">Valoraciones</h2>
+        <div class="container__comentarios--boxes" id="comentBox"></div>
+      </div>
       <div class="container__contacto">
-        <h3 class="container__contacto--title">¡Queremos saber de usted!</h3>
-        <p class="container__contacto--text">C. Zamora, 130, 18151 Ogíjares, Granada, Spain</p>
-        <p class="container__contacto--text">Teléfonos: 678 66 11 73 / 678 66 11 74</p>
-        <p class="container__contacto--text">Email: transcopar@gmail.com</p>
+        <div class="container__contacto--text">
+          <h3 class="container__contacto--title">¡Queremos saber de usted!</h3>
+          <p>C. Zamora, 130, 18151 Ogíjares, Granada, Spain</p>
+          <p>Teléfonos: 678 66 11 73 / 678 66 11 74</p>
+          <p>Email: transcopar@gmail.com</p>
+        </div>
+        <div class="container__contacto--network"><a href=""><img src="../assets/icons/facebook.svg" alt="Logo Facebook"></a><a href=""><img src="../assets/icons/instagram.svg" alt="Logo Instagram"></a><a href=""><img src="../assets/icons/linkedin.svg" alt="Logo Linkedin"></a><a href=""><img src="../assets/icons/twitter.svg" alt="Logo Twitter"></a></div>
         <div class="container__contacto--map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3180.8374341795798!2d-3.61787438534868!3d37.13278245660836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fb0c8c651487%3A0x43e36c112699c901!2sC.%20Zamora%2C%20130%2C%2018151%20Og%C3%ADjares%2C%20Granada%2C%20Espa%C3%B1a!5e0!3m2!1ses!2spt!4v1647860334266!5m2!1ses!2spt" width="320" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
-        <div class="container__contacto--network"><a href=""><img src="../assets/icons/facebook.svg" alt="Logo Facebook"></a><a href=""><img src="../assets/icons/instagram.svg" alt="Logo Instagram"></a><a href=""><img src="../assets/icons/linkedin.svg" alt="Logo Linkedin"></a><a href=""><img src="../assets/icons/twitter.svg" alt="Logo Twitter"></a></div>
       </div>
     </main>
+    <script type="module" src="../js/firebase/fireConfig.js"></script>
+    <script type="module" src="../js/app.js"></script>
     <footer class="footer">
       <p>©2022 por TRANSPORT PUGA EXPRESS S.L.</p>
     </footer>

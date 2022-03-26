@@ -11,4 +11,8 @@ footer {
     p {
         margin: 0;
     }
+    @include media(desktop-s) {
+        z-index: 100;
+        margin: 0;
+    }
 }

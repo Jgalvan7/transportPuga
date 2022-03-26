@@ -12,12 +12,16 @@
     @media only screen and (min-width: 768px) { @content; }
   }
 
-  @if $breakpoint == tablet900 {
+  @if $breakpoint == tablet-l {
     @media only screen and (min-width: 900px) { @content; }
   }
 
   @else if $breakpoint == desktop-s {
     @media only screen and (min-width: 992px) { @content; }
+  }
+
+  @else if $breakpoint == desktop {
+    @media only screen and (min-width: 1024px) { @content; }
   }
 
   @else if $breakpoint == desktop-m {

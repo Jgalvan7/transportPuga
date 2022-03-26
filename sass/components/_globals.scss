@@ -62,11 +62,19 @@ body {
     background-color: $color-primario;
     @include titulos($Fuente1);
     @include font-size(16px);
+    @include media(desktop-s) {
+        background-image: url(../assets/images/bgPuga.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
 }
 
 main {
     position: relative;
     top: 125px;
+    @include media(desktop-s) {
+        top: 0;
+    }
 }
 
 .container__bnt {
@@ -89,6 +97,35 @@ main {
         }
 }
 
+.construccion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 95vh;
+    padding: 10px;
+    background-image: url(../assets/images/bgPuga.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    img {
+        width: 300px;
+        margin-bottom: 20px;
+        object-fit: contain;
+    }
+    p {
+        width: 300px;
+        text-align: justify;
+    }
+    @include media(tablet-s) {
+        img {
+            width: 400px;
+        }
+        p {
+            width: 350px;
+        }
+    }
+}
 .hidden {
     display: none;
 }
