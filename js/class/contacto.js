@@ -1,6 +1,6 @@
 import { insert, list, borrarDoc } from "../firebase/firestore.js";
 
-export class Contacto {
+export class Contactos {
     constructor({
         cliente,
         empresa,
@@ -14,20 +14,20 @@ export class Contacto {
         this.email = email;
         this.comentario = comentario;
         this.fecha = new Date();
+        this.new = true;
     }
 
     async publicar() {
-        //alert("llega");
         const item = {
             Cliente: this.cliente,
             Empresa: this.empresa,
             Telefono: Number(this.telefono),
             Email: this.email,
             Comentario: this.comentario,
-            Fecha: this.fecha
+            Fecha: this.fecha,
+            New: this.new,
         }
-        //console.log(item);
-        const saveContacto = await insert("Comentarios", item);
+        const saveContacto = await insert("peticionContacto", item);
         if(saveContacto._key.path.segments[1]) {
             const formulario = document.getElementById("formContacto");
             formulario.classList.add("thxText");
@@ -37,7 +37,8 @@ export class Contacto {
             texto.innerText = "Su solicitud ha sido enviada correctamente, nos pondremos en contacto con usted lo antes posible. Gracias por su confianza e interés.";
 
             const btnCerrar = document.createElement("button");
-            btnCerrar.innerText = "Cerrar ventana";
+            btnCerrar.className = "container__bnt";
+            btnCerrar.innerText = "Cerrar";
             btnCerrar.addEventListener("click", () => {
                 formulario.classList.remove("thxText");
                 const modal = document.getElementById("modal");
@@ -45,7 +46,6 @@ export class Contacto {
                 modal.classList.remove("modalContacto");
             })
             formulario.append(texto,btnCerrar);
-
         }
     }
 

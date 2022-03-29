@@ -1,4 +1,5 @@
 import { Valoraciones } from "./class/valoraciones.js";
+import { Contactos } from "./class/contacto.js";
 
 const modal = document.getElementById("modal");
 const abrirModal = document.getElementById("btnContacto");
@@ -12,30 +13,35 @@ cerrarModal.addEventListener("click", (e) => {
     modal.classList.remove("modalContacto");
 });
 
-// CREAR VALORACION
+// PETICION DE CONTACTO
 // buscamos el id del botón que envia el comentario y le añadimos una escucha para cuando se hace click
-/* const sendValoracion = document.getElementById("sendValoracion");
-sendValoracion.addEventListener("click", (e) => {
+ const sendContacto = document.getElementById("sendContacto");
+sendContacto.addEventListener("click", (e) => {
     e.preventDefault();
     // buscamos el formulario y capturamos los valores de los campos
-    const formulario = document.getElementById("formValoracion");
+    const formulario = document.getElementById("formContacto");
     const client = formulario.cliente.value;
     const empresa = formulario.empresa.value;
-    const valor = formulario.valoracion.value;
+    const telefono = formulario.telefono.value;
+    const email = formulario.email.value;
     const comentario = formulario.comentario.value;
-
-    // creamos una instancia del objeto Coments con los valores del formulario
-    const Valoracion = new Valoraciones ({
-        cliente: client,
-        empresa: empresa,
-        valoracion: valor,
-        comentario: comentario
-    });
-    // llamamos al metodo publicar del objeto Coments
-    Valoracion.publicar();
-    // limpiamos el formulario
-    formulario.reset();
-}); */
+    if(client != "" && empresa != "" && telefono != "" && email != "") {
+        // creamos una instancia del objeto Coments con los valores del formulario
+        const Contacto = new Contactos ({
+            cliente: client,
+            empresa: empresa,
+            telefono: telefono,
+            email: email,
+            comentario: comentario
+        });
+        // llamamos al metodo publicar del objeto Coments
+        Contacto.publicar();
+        // limpiamos el formulario
+        formulario.reset();
+    } else {
+        alert("Por favor rellena los campos obligatorios marcados con un *.")
+    }
+});
 
 // VISUALIZAR COMENTARIOS
 // buscamos el contenedor donde se cargaran los comentarios

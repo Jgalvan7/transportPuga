@@ -32,17 +32,18 @@
         <form class="formContacto" id="formContacto">
           <div class="container__logo--img"><img src="../assets/images/Logo.png" alt="Logo Transport Puga Express SL"></div><br>
           <h3>Formulario de contacto:</h3><br>
-          <input class="campos" id="cliente" type="text" name="cliente" placeholder="Persona de contacto">
-          <input class="campos" id="empresa" type="text" name="empresa" placeholder="Nombre de la empresa">
+          <input class="campos" id="cliente" type="text" name="cliente" placeholder="Persona de contacto *" required>
+          <input class="campos" id="empresa" type="text" name="empresa" placeholder="Nombre de la empresa *" required>
           <div class="campos--contacto">
-            <input id="telefono" type="text" name="telefono" placeholder="Teléfono">
-            <input id="email" type="text" name="email" placeholder="Email">
-          </div><br>
+            <input id="telefono" type="text" name="telefono" placeholder="Teléfono *" required>
+            <input id="email" type="text" name="email" placeholder="Email *" required>
+          </div>
+          <p class="camposObligatorios">* Campos de contacto obligatorios</p>
           <label>Motivo de contacto:</label>
           <textarea id="coment" name="comentario" cols="39" rows="5"></textarea><br>
           <div class="acciones">
-            <button id="sendValoracion">Enviar formulario</button>
-            <button id="cerrarModal">Cerrar sin enviar</button>
+            <button class="container__bnt" id="sendContacto">Enviar formulario</button>
+            <button class="container__bnt" id="cerrarModal">Cerrar sin enviar</button>
           </div>
         </form>
       </div>

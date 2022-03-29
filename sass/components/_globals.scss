@@ -116,7 +116,6 @@ main {
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    max-width: 500px;
     height: 100%;
     padding: 20px 10px;
     color:$color-claro;
@@ -127,15 +126,23 @@ main {
     }
     .campos {
         width: 100%;
+        color: $color-claro;
         border: none;
         border-bottom: 1px solid $color-claro;
         background: none;
+        &::placeholder {
+            color: $color-claro;
+        }
         &--contacto {
             input {
                 width: 100%;
+                color: $color-claro;
                 border: none;
                 border-bottom: 1px solid $color-claro;
                 background: none;
+                &::placeholder {
+                    color: $color-claro;
+                }
             }
         }
     }
@@ -143,6 +150,12 @@ main {
         width: 100%;
         min-height: 100px;
         resize: none;
+    }
+    p {
+        @include font-size(16px);
+    }
+    .camposObligatorios {
+        @include font-size(10px);
     }
     .acciones {
         display: flex;
@@ -152,7 +165,10 @@ main {
         max-width: 500px;
         max-height: 450px;
         padding: 25px 35px;
+        border: 1px solid $color-claro;
         border-radius: 10px;
+        background-image: url(../assets/images/bgPuga.png);
+        overflow-y: hidden;
         .container__logo--img {
             display: none;
         }

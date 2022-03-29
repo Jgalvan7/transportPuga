@@ -8,18 +8,18 @@ block Content
                 br
                 h3 Formulario de contacto:
                 br
-                input#cliente.campos(type="text", name="cliente", placeholder="Persona de contacto")
-                input#empresa.campos(type="text", name="empresa", placeholder="Nombre de la empresa")
+                input#cliente.campos(type="text", name="cliente", placeholder="Persona de contacto *", required)
+                input#empresa.campos(type="text", name="empresa", placeholder="Nombre de la empresa *", required)
                 .campos--contacto
-                    input#telefono(type="text", name="telefono", placeholder="Teléfono")
-                    input#email(type="text", name="email", placeholder="Email")
-                br
+                    input#telefono(type="text", name="telefono", placeholder="Teléfono *", required)
+                    input#email(type="text", name="email", placeholder="Email *", required)
+                p.camposObligatorios * Campos de contacto obligatorios
                 label Motivo de contacto:
                 textarea#coment(name="comentario", cols="39", rows="5")
                 br
                 .acciones
-                    button#sendValoracion Enviar formulario
-                    button#cerrarModal Cerrar sin enviar
+                    button#sendContacto.container__bnt Enviar formulario
+                    button#cerrarModal.container__bnt Cerrar sin enviar
         .container__hero
             .contenido__hero
                 h1.contenido__hero--title Servicio de Transporte Profesional

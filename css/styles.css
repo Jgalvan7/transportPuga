@@ -628,7 +628,6 @@ main {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  max-width: 500px;
   height: 100%;
   padding: 20px 10px;
   color: #ebebeb;
@@ -640,20 +639,62 @@ main {
 }
 .formContacto .campos {
   width: 100%;
+  color: #ebebeb;
   border: none;
   border-bottom: 1px solid #ebebeb;
   background: none;
 }
+.formContacto .campos::-webkit-input-placeholder {
+  color: #ebebeb;
+}
+.formContacto .campos::-moz-placeholder {
+  color: #ebebeb;
+}
+.formContacto .campos:-ms-input-placeholder {
+  color: #ebebeb;
+}
+.formContacto .campos::-ms-input-placeholder {
+  color: #ebebeb;
+}
+.formContacto .campos::placeholder {
+  color: #ebebeb;
+}
 .formContacto .campos--contacto input {
   width: 100%;
+  color: #ebebeb;
   border: none;
   border-bottom: 1px solid #ebebeb;
   background: none;
+}
+.formContacto .campos--contacto input::-webkit-input-placeholder {
+  color: #ebebeb;
+}
+.formContacto .campos--contacto input::-moz-placeholder {
+  color: #ebebeb;
+}
+.formContacto .campos--contacto input:-ms-input-placeholder {
+  color: #ebebeb;
+}
+.formContacto .campos--contacto input::-ms-input-placeholder {
+  color: #ebebeb;
+}
+.formContacto .campos--contacto input::placeholder {
+  color: #ebebeb;
 }
 .formContacto textarea {
   width: 100%;
   min-height: 100px;
   resize: none;
+}
+.formContacto p {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.formContacto .camposObligatorios {
+  font-size: 10px;
+  font-size: 0.625rem;
+  line-height: 0.9375rem;
 }
 .formContacto .acciones {
   display: -webkit-box;
@@ -668,7 +709,10 @@ main {
     max-width: 500px;
     max-height: 450px;
     padding: 25px 35px;
+    border: 1px solid #ebebeb;
     border-radius: 10px;
+    background-image: url(../assets/images/bgPuga.png);
+    overflow-y: hidden;
   }
   .formContacto .container__logo--img {
     display: none;
