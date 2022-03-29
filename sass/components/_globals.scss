@@ -79,22 +79,109 @@ main {
 
 .container__bnt {
     width: 200px;
-        margin: 15px auto;
-        padding: 5px;
-        font-weight: bold;
-        text-transform: uppercase;
-        border: 2px solid $color-claro;
-        border-radius: 5px;
-        color: $color-claro;
-        background-color: $color-primario;
-        $color-shadow: cambiarColor($color-claro,0.8);
-        box-shadow: 2px 3px 10px 0px $color-shadow;
-        &:hover {
-            padding: 5.5px 0;
-            width: 190px;
-            box-shadow: none;
-            @include font-size(15px);
+    margin: 15px auto;
+    padding: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 2px solid $color-claro;
+    border-radius: 5px;
+    color: $color-claro;
+    background-color: $color-primario;
+    $color-shadow: cambiarColor($color-claro,0.8);
+    box-shadow: 2px 3px 10px 0px $color-shadow;
+    &:hover {
+        padding: 5.5px 0;
+        width: 190px;
+        box-shadow: none;
+        @include font-size(15px);
+    }
+}
+
+.modalContacto {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+    z-index: 10;
+    @include media(tablet-s) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.formContacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+    padding: 20px 10px;
+    color:$color-claro;
+    background-color: $color-primario;
+    overflow-y: scroll;
+    .container__logo--img {
+        margin: 0 auto;
+    }
+    .campos {
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid $color-claro;
+        background: none;
+        &--contacto {
+            input {
+                width: 100%;
+                border: none;
+                border-bottom: 1px solid $color-claro;
+                background: none;
+            }
         }
+    }
+    textarea {
+        width: 100%;
+        min-height: 100px;
+        resize: none;
+    }
+    .acciones {
+        display: flex;
+        justify-content: space-between;
+    }
+    @include media(tablet-s) {
+        max-width: 500px;
+        max-height: 450px;
+        padding: 25px 35px;
+        border-radius: 10px;
+        .container__logo--img {
+            display: none;
+        }
+        .campos {
+            &--contacto {
+                display: flex;
+                justify-content: space-between;
+                input {
+                    width: 49%;
+                }
+            }
+        }
+    }
+}
+.thxText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    @include font-size(22px);
+    p {
+        text-align: justify;
+    }
+    button {
+        display: inline;
+        margin: 15px;
+        padding: 10px 25px;
+    }
 }
 
 .construccion{

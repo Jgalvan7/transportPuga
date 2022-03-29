@@ -1,16 +1,16 @@
 import { Valoraciones } from "./class/valoraciones.js";
 
-/* const modal = document.getElementById("modal");
-const abrirModal = document.getElementById("btnValoracion");
+const modal = document.getElementById("modal");
+const abrirModal = document.getElementById("btnContacto");
 abrirModal.addEventListener("click", (e) => {
-    modal.classList.add("modalValoracion")
+    modal.classList.add("modalContacto")
     modal.classList.remove("hidden");
 });
 const cerrarModal = document.getElementById("cerrarModal");
 cerrarModal.addEventListener("click", (e) => {
     modal.classList.add("hidden");
-    modal.classList.remove("modalValoracion");
-}); */
+    modal.classList.remove("modalContacto");
+});
 
 // CREAR VALORACION
 // buscamos el id del botón que envia el comentario y le añadimos una escucha para cuando se hace click

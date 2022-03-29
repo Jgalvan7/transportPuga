@@ -593,6 +593,127 @@ main {
   line-height: 1.40625rem;
 }
 
+.modalContacto {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
+  z-index: 10;
+}
+@media only screen and (min-width: 650px) {
+  .modalContacto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.formContacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  max-width: 500px;
+  height: 100%;
+  padding: 20px 10px;
+  color: #ebebeb;
+  background-color: #000;
+  overflow-y: scroll;
+}
+.formContacto .container__logo--img {
+  margin: 0 auto;
+}
+.formContacto .campos {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ebebeb;
+  background: none;
+}
+.formContacto .campos--contacto input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ebebeb;
+  background: none;
+}
+.formContacto textarea {
+  width: 100%;
+  min-height: 100px;
+  resize: none;
+}
+.formContacto .acciones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media only screen and (min-width: 650px) {
+  .formContacto {
+    max-width: 500px;
+    max-height: 450px;
+    padding: 25px 35px;
+    border-radius: 10px;
+  }
+  .formContacto .container__logo--img {
+    display: none;
+  }
+  .formContacto .campos--contacto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .formContacto .campos--contacto input {
+    width: 49%;
+  }
+}
+
+.thxText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  font-size: 22px;
+  font-size: 1.375rem;
+  line-height: 2.0625rem;
+}
+.thxText p {
+  text-align: justify;
+}
+.thxText button {
+  display: inline;
+  margin: 15px;
+  padding: 10px 25px;
+}
+
 .construccion {
   display: -webkit-box;
   display: -ms-flexbox;

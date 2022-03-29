@@ -28,7 +28,24 @@
       </div>
     </header>
     <main>
-      <div class="hidden" id="modal"></div>
+      <div class="hidden" id="modal">
+        <form class="formContacto" id="formContacto">
+          <div class="container__logo--img"><img src="../assets/images/Logo.png" alt="Logo Transport Puga Express SL"></div><br>
+          <h3>Formulario de contacto:</h3><br>
+          <input class="campos" id="cliente" type="text" name="cliente" placeholder="Persona de contacto">
+          <input class="campos" id="empresa" type="text" name="empresa" placeholder="Nombre de la empresa">
+          <div class="campos--contacto">
+            <input id="telefono" type="text" name="telefono" placeholder="Teléfono">
+            <input id="email" type="text" name="email" placeholder="Email">
+          </div><br>
+          <label>Motivo de contacto:</label>
+          <textarea id="coment" name="comentario" cols="39" rows="5"></textarea><br>
+          <div class="acciones">
+            <button id="sendValoracion">Enviar formulario</button>
+            <button id="cerrarModal">Cerrar sin enviar</button>
+          </div>
+        </form>
+      </div>
       <div class="container__hero">
         <div class="contenido__hero">
           <h1 class="contenido__hero--title">Servicio de Transporte Profesional</h1>
@@ -38,7 +55,7 @@
               <p class="contenido__hero--textExtend">Somos una empresa especialista en entregas a domicilio, dedicados desde 1995 a la distribución en la provincia de Granada.</p>
             </div>
           </div>
-          <button class="container__bnt contenido__hero--bnt">Contactanos</button>
+          <button class="container__bnt contenido__hero--bnt" id="btnContacto">Contactanos</button>
         </div>
       </div>
       <div class="container__servicios">
