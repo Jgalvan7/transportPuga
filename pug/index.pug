@@ -8,11 +8,11 @@ block Content
                 br
                 h3 Formulario de contacto:
                 br
-                input#cliente.campos(type="text", name="cliente", placeholder="Persona de contacto *", required)
-                input#empresa.campos(type="text", name="empresa", placeholder="Nombre de la empresa *", required)
+                input#cliente.campos(type="text", name="cliente", placeholder="Persona de contacto *")
+                input#empresa.campos(type="text", name="empresa", placeholder="Nombre de la empresa *")
                 .campos--contacto
-                    input#telefono(type="text", name="telefono", placeholder="Teléfono *", required)
-                    input#email(type="text", name="email", placeholder="Email *", required)
+                    input#telefono(type="text", name="telefono", placeholder="Teléfono *")
+                    input#email(type="text", name="email", placeholder="Email *")
                 p.camposObligatorios * Campos de contacto obligatorios
                 label Motivo de contacto:
                 textarea#coment(name="comentario", cols="39", rows="5")
@@ -32,7 +32,8 @@ block Content
         .container__servicios
             h2.container__servicios--title Nuestros Servicios
             p.container__servicios--text TRANSPORT PUGA EXPRESS S.L opera conforme a los más altos estándares de servicio en todo aspecto de nuestro trabajo. Gracias a nuestra enorme flota y profundo conocimiento de las calles de Ogíjares, podemos ofrecerle servicios diversos y especializados que se ajusten a todas sus necesidades. Conozca los servicios que ofrecemos.
-            button.container__bnt Servicios
+            a(href="servicios.html")
+                button.container__bnt Servicios
             .container__servicios--boxes
                 +cajaServicio("furgo_fast.png","Servicio Express: en 2h al cliente","Un servicio de entrega rápido que mantiene toda la calidad que caracteriza a nuestros transportes y entregas.")
                 +cajaServicio("third_service.jpg","Servicio de logística de terceros","Nuestros servicio se distingue del resto por nuestra consistencia, confiabilidad, comunicación y calidad.")
@@ -53,5 +54,3 @@ block Content
                 a(href=""): img(src="../assets/icons/twitter.svg", alt="Logo Twitter")
             .container__contacto--map
                 iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3180.8374341795798!2d-3.61787438534868!3d37.13278245660836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fb0c8c651487%3A0x43e36c112699c901!2sC.%20Zamora%2C%20130%2C%2018151%20Og%C3%ADjares%2C%20Granada%2C%20Espa%C3%B1a!5e0!3m2!1ses!2spt!4v1647860334266!5m2!1ses!2spt", width="320", height="300", style="border:0;", allowfullscreen="", loading="lazy")
-    script(type="module", src="../js/firebase/fireConfig.js")
-    script(type="module", src="../js/app.js")

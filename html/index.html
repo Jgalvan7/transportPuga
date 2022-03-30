@@ -18,25 +18,26 @@
       </div>
       <div class="container__menu">
         <div class="menu__mobile">
-          <div class="menu__mobile--icon"><img src="../assets/icons/icon_menu.png" alt="Icono para desplegar el menú"></div>
+          <div class="menu__mobile--icon" id="menuBurger"><a href="#"><img src="../assets/icons/icon_menu.png" alt="Icono para desplegar el menú"></a></div>
           <div class="menu__mobile--text">
             <p id="seccionMenu"></p>
           </div>
           <div class="menu__mobile--network"><a href=""><img src="../assets/icons/facebook.svg" alt="Logo Facebook"></a><a href=""><img src="../assets/icons/instagram.svg" alt="Logo Instagram"></a><a href=""><img src="../assets/icons/linkedin.svg" alt="Logo Linkedin"></a><a href=""><img src="../assets/icons/twitter.svg" alt="Logo Twitter"></a></div>
         </div>
-        <div class="menu__desktop"><a href="">Home</a><a href="">Servicios</a><a href="">Flota</a><a href="">Nosotros</a><a href="">Contacto</a><a href="">Preguntas</a></div>
+        <div class="menu__desktop"><a href="index.html">Home</a><a href="servicios.html">Servicios</a><a href="flota.html">Flota</a><a href="nosotros.html">Nosotros</a><a href="contacto.html">Contacto</a><a href="preguntas.html">Preguntas</a></div>
       </div>
+      <div class="hidden" id="menuItem"><a href="index.html">Home</a><a href="servicios.html">Servicios</a><a href="flota.html">Flota</a><a href="nosotros.html">Nosotros</a><a href="contacto.html">Contacto</a><a href="preguntas.html">Preguntas</a></div>
     </header>
     <main>
       <div class="hidden" id="modal">
         <form class="formContacto" id="formContacto">
           <div class="container__logo--img"><img src="../assets/images/Logo.png" alt="Logo Transport Puga Express SL"></div><br>
           <h3>Formulario de contacto:</h3><br>
-          <input class="campos" id="cliente" type="text" name="cliente" placeholder="Persona de contacto *" required>
-          <input class="campos" id="empresa" type="text" name="empresa" placeholder="Nombre de la empresa *" required>
+          <input class="campos" id="cliente" type="text" name="cliente" placeholder="Persona de contacto *">
+          <input class="campos" id="empresa" type="text" name="empresa" placeholder="Nombre de la empresa *">
           <div class="campos--contacto">
-            <input id="telefono" type="text" name="telefono" placeholder="Teléfono *" required>
-            <input id="email" type="text" name="email" placeholder="Email *" required>
+            <input id="telefono" type="text" name="telefono" placeholder="Teléfono *">
+            <input id="email" type="text" name="email" placeholder="Email *">
           </div>
           <p class="camposObligatorios">* Campos de contacto obligatorios</p>
           <label>Motivo de contacto:</label>
@@ -61,8 +62,8 @@
       </div>
       <div class="container__servicios">
         <h2 class="container__servicios--title">Nuestros Servicios</h2>
-        <p class="container__servicios--text">TRANSPORT PUGA EXPRESS S.L opera conforme a los más altos estándares de servicio en todo aspecto de nuestro trabajo. Gracias a nuestra enorme flota y profundo conocimiento de las calles de Ogíjares, podemos ofrecerle servicios diversos y especializados que se ajusten a todas sus necesidades. Conozca los servicios que ofrecemos.</p>
-        <button class="container__bnt">Servicios</button>
+        <p class="container__servicios--text">TRANSPORT PUGA EXPRESS S.L opera conforme a los más altos estándares de servicio en todo aspecto de nuestro trabajo. Gracias a nuestra enorme flota y profundo conocimiento de las calles de Ogíjares, podemos ofrecerle servicios diversos y especializados que se ajusten a todas sus necesidades. Conozca los servicios que ofrecemos.</p><a href="servicios.html">
+          <button class="container__bnt">Servicios</button></a>
         <div class="container__servicios--boxes">
           <div class="cajaServicio">
             <h3 class="cajaServicio__title">Servicio Express: en 2h al cliente</h3>
@@ -107,10 +108,10 @@
         </div>
       </div>
     </main>
-    <script type="module" src="../js/firebase/fireConfig.js"></script>
-    <script type="module" src="../js/app.js"></script>
     <footer class="footer">
       <p>©2022 por TRANSPORT PUGA EXPRESS S.L.</p>
     </footer>
+    <script type="module" src="../js/firebase/fireConfig.js"></script>
+    <script type="module" src="../js/app.js"></script>
   </body>
 </html>

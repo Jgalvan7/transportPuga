@@ -5,7 +5,7 @@ header {
     background-image: url(../assets/images/bgPuga.png);
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: hidden;
+    //overflow: hidden;
     z-index: 1;
     @include media(desktop-s) {
         position: relative;
@@ -50,7 +50,14 @@ header {
             border-right: 1px solid $color-claro;
         }
         &--text {
-            display: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            p {
+                margin: 0;
+                font-weight: bold;
+            }
         }
         &--network {
             display: none;
@@ -89,5 +96,17 @@ header {
                 @include font-size(14px);
             }
         }
+    }
+}
+
+.container__menu--mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    background-color: $color-primario;
+    a {
+        margin: 5px 0;
+        color: $color-claro;
     }
 }

@@ -7,8 +7,9 @@ header
             p Email: transcopar@gmail.com
     .container__menu
         .menu__mobile
-            .menu__mobile--icon
-                img(src="../assets/icons/icon_menu.png", alt="Icono para desplegar el menú")
+            #menuBurger.menu__mobile--icon
+                a(href="#")
+                    img(src="../assets/icons/icon_menu.png", alt="Icono para desplegar el menú")
             .menu__mobile--text
                 p#seccionMenu
             .menu__mobile--network
@@ -17,9 +18,16 @@ header
                 a(href=""): img(src="../assets/icons/linkedin.svg", alt="Logo Linkedin")
                 a(href=""): img(src="../assets/icons/twitter.svg", alt="Logo Twitter")
         .menu__desktop
-            a(href="") Home
-            a(href="") Servicios
-            a(href="") Flota
-            a(href="") Nosotros
-            a(href="") Contacto
-            a(href="") Preguntas
+            a(href="index.html") Home
+            a(href="servicios.html") Servicios
+            a(href="flota.html") Flota
+            a(href="nosotros.html") Nosotros
+            a(href="contacto.html") Contacto
+            a(href="preguntas.html") Preguntas
+    #menuItem.hidden
+        a(href="index.html") Home
+        a(href="servicios.html") Servicios
+        a(href="flota.html") Flota
+        a(href="nosotros.html") Nosotros
+        a(href="contacto.html") Contacto
+        a(href="preguntas.html") Preguntas
