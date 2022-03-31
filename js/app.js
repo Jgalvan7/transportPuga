@@ -1,14 +1,21 @@
 import { Valoraciones } from "./class/valoraciones.js";
 import { Contactos } from "./class/contacto.js";
 
+// FUNCIONALIDAD BOTONES DE CONTACTO
+function bntContacto() {
+    const botones = document.querySelector("main");
+    botones.addEventListener("click", (e) => {
+        let boton = e.target.id;
+        if (boton.includes("btnContacto")) {
+            modal();
+        }
+    })
+}
 function modal() {
     try {
         const modal = document.getElementById("modal");
-        const abrirModal = document.getElementById("btnContacto");
-        abrirModal.addEventListener("click", (e) => {
-            addRemoveClass(modal, "hidden");
-            addRemoveClass(modal, "modalContacto");
-        });
+        addRemoveClass(modal, "hidden");
+        addRemoveClass(modal, "modalContacto");
         const cerrarModal = document.getElementById("cerrarModal");
         cerrarModal.addEventListener("click", (e) => {
             addRemoveClass(modal, "hidden");
@@ -18,7 +25,8 @@ function modal() {
 
     }
 }
-modal();
+bntContacto();
+
 
 const menuBnt = document.getElementById("menuBurger");
 menuBnt.addEventListener("click", (e) => {
@@ -37,6 +45,7 @@ switch (window.location.pathname) {
         break;
     case url+"servicios.html":
         infoSeccion.innerText = "SERVICIOS";
+        contacto();
         break;
     case url+"flota.html":
         infoSeccion.innerText = "FLOTA ";

@@ -2,5 +2,31 @@ extend components/template.pug
 block Content
     main
         #modal.hidden
-        h2 Servicios que brindamos
-        P TRANSPORT PUGA EXPRESS S.L opera conforme a los más altos estándares de servicio en todo aspecto de nuestro trabajo. Gracias a nuestra enorme flota y profundo conocimiento de las calles de Ogíjares, podemos ofrecerle servicios diversos y especializados que se ajusten a todas sus necesidades. Conozca los servicios que ofrecemos a continuación.
+            form#formContacto.formContacto
+                .container__logo--img
+                    img(src="../assets/images/Logo.png", alt="Logo Transport Puga Express SL")
+                br
+                h3 Formulario de contacto:
+                br
+                input#cliente.campos(type="text", name="cliente", placeholder="Persona de contacto *")
+                input#empresa.campos(type="text", name="empresa", placeholder="Nombre de la empresa *")
+                .campos--contacto
+                    input#telefono(type="text", name="telefono", placeholder="Teléfono *")
+                    input#email(type="text", name="email", placeholder="Email *")
+                p.camposObligatorios * Campos de contacto obligatorios
+                label Motivo de contacto:
+                textarea#coment(name="comentario", cols="39", rows="5")
+                br
+                .acciones
+                    button#sendContacto.container__bnt Enviar formulario
+                    button#cerrarModal.container__bnt Cerrar sin enviar
+        .container__servicios
+            .container__servicios--intro
+                h2 Servicios que brindamos
+                P TRANSPORT PUGA EXPRESS S.L opera conforme a los más altos estándares de servicio en todo aspecto de nuestro trabajo. Gracias a nuestra enorme flota y profundo conocimiento de las calles de Ogíjares, podemos ofrecerle servicios diversos y especializados que se ajusten a todas sus necesidades. Conozca los servicios que ofrecemos a continuación.
+            button#btnContacto.servicios__bnt Contactanos
+            .container__servicios--boxItem
+                +servicioItem("furgo_fast2.png","Servicio Express: en 2h al cliente","Un servicio de entrega rápido que mantiene toda la calidad que caracteriza a nuestros transportes y entregas. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id quas consequatur, vero omnis tempore incidunt voluptatem quaerat qui velit? Praesentium expedita repellendus optio cupiditate minus aut, laboriosam sint nisi dignissimos.")
+                +servicioItem("third_service.jpg","Servicio de logística de terceros","¿Le interesa contar con un servicio de transporte con años de experiencia? Siempre nos aseguramos de brindar el mejor servicio las 24 horas. Nuestros servicios de Servicio de logística de terceros nos distinguen del resto por nuestra consistencia, confiabilidad, comunicación y calidad. Cada uno de los miembros de nuestro equipo está altamente capacitado y su trabajo es puntual. Satisfacción garantizada.")
+                +servicioItem("red_truck.png","Servicio de carga de mercancía","Tenemos años de experiencia con servicio de Servicio de carga. Sabemos que es importante llegar a su destino a tiempo y con comodidad, y eso es lo que le garantizamos. Estamos orgullosos del equipo con que contamos y del arduo trabajo que implica trasladarlo por todo el territorio de Ogíjares sin importar el tráfico. Invertimos el tiempo que sea necesario en comunicación y preparativos para que llegue seguro a su destino. No dude en llamarnos para obtener más información o hacer una reservación.")
+            button#btnContacto2.servicios__bnt Contactanos

@@ -1,5 +1,15 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-app.js";
 
+/* const firebaseConfig = {
+    apiKey: porcess.env.APP_FIREBASE_APIKEY,
+    authDomain: porcess.env.APP_FIREBASE_AUTHDOMAIN,
+    projectId: porcess.env.APP_FIREBASE_PROJECTID,
+    storageBucket: porcess.env.APP_FIREBASE_STORAGEBUCKET,
+    messagingSenderId: porcess.env.APP_FIREBASE_MESSAGINGSENDERID,
+    appId: porcess.env.APP_FIREBASE_APPID,
+    measurementId: porcess.env.APP_FIREBASE_MEASUREMENTID
+}; */
+
 const firebaseConfig = {
     apiKey: "AIzaSyBzI-vjTUXk5d7_KEI47eea6iorILt-1as",
     authDomain: "jgalvandesign-eee0b.firebaseapp.com",
@@ -12,3 +22,5 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+
+

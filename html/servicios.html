@@ -29,9 +29,56 @@
       <div class="hidden" id="menuItem"><a href="index.html">Home</a><a href="servicios.html">Servicios</a><a href="flota.html">Flota</a><a href="nosotros.html">Nosotros</a><a href="contacto.html">Contacto</a><a href="preguntas.html">Preguntas</a></div>
     </header>
     <main>
-      <div class="hidden" id="modal"></div>
-      <h2>Servicios que brindamos</h2>
-      <P>TRANSPORT PUGA EXPRESS S.L opera conforme a los más altos estándares de servicio en todo aspecto de nuestro trabajo. Gracias a nuestra enorme flota y profundo conocimiento de las calles de Ogíjares, podemos ofrecerle servicios diversos y especializados que se ajusten a todas sus necesidades. Conozca los servicios que ofrecemos a continuación.</P>
+      <div class="hidden" id="modal">
+        <form class="formContacto" id="formContacto">
+          <div class="container__logo--img"><img src="../assets/images/Logo.png" alt="Logo Transport Puga Express SL"></div><br>
+          <h3>Formulario de contacto:</h3><br>
+          <input class="campos" id="cliente" type="text" name="cliente" placeholder="Persona de contacto *">
+          <input class="campos" id="empresa" type="text" name="empresa" placeholder="Nombre de la empresa *">
+          <div class="campos--contacto">
+            <input id="telefono" type="text" name="telefono" placeholder="Teléfono *">
+            <input id="email" type="text" name="email" placeholder="Email *">
+          </div>
+          <p class="camposObligatorios">* Campos de contacto obligatorios</p>
+          <label>Motivo de contacto:</label>
+          <textarea id="coment" name="comentario" cols="39" rows="5"></textarea><br>
+          <div class="acciones">
+            <button class="container__bnt" id="sendContacto">Enviar formulario</button>
+            <button class="container__bnt" id="cerrarModal">Cerrar sin enviar</button>
+          </div>
+        </form>
+      </div>
+      <div class="container__servicios">
+        <div class="container__servicios--intro">
+          <h2>Servicios que brindamos</h2>
+          <P>TRANSPORT PUGA EXPRESS S.L opera conforme a los más altos estándares de servicio en todo aspecto de nuestro trabajo. Gracias a nuestra enorme flota y profundo conocimiento de las calles de Ogíjares, podemos ofrecerle servicios diversos y especializados que se ajusten a todas sus necesidades. Conozca los servicios que ofrecemos a continuación.</P>
+        </div>
+        <button class="servicios__bnt" id="btnContacto">Contactanos</button>
+        <div class="container__servicios--boxItem">
+          <div class="servicioItem">
+            <div class="servicioItem--imagen"><img src="../assets/images/furgo_fast2.png" alt="Imagen de prueba para practicar"/></div>
+            <div class="servicioItem--contenido">
+              <h3 class="servicioItem--title">Servicio Express: en 2h al cliente</h3>
+              <p class="servicioItem--text">Un servicio de entrega rápido que mantiene toda la calidad que caracteriza a nuestros transportes y entregas. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id quas consequatur, vero omnis tempore incidunt voluptatem quaerat qui velit? Praesentium expedita repellendus optio cupiditate minus aut, laboriosam sint nisi dignissimos.</p>
+            </div>
+          </div>
+          <div class="servicioItem">
+            <div class="servicioItem--imagen"><img src="../assets/images/third_service.jpg" alt="Imagen de prueba para practicar"/></div>
+            <div class="servicioItem--contenido">
+              <h3 class="servicioItem--title">Servicio de logística de terceros</h3>
+              <p class="servicioItem--text">¿Le interesa contar con un servicio de transporte con años de experiencia? Siempre nos aseguramos de brindar el mejor servicio las 24 horas. Nuestros servicios de Servicio de logística de terceros nos distinguen del resto por nuestra consistencia, confiabilidad, comunicación y calidad. Cada uno de los miembros de nuestro equipo está altamente capacitado y su trabajo es puntual. Satisfacción garantizada.</p>
+            </div>
+          </div>
+          <div class="servicioItem">
+            <div class="servicioItem--imagen"><img src="../assets/images/red_truck.png" alt="Imagen de prueba para practicar"/></div>
+            <div class="servicioItem--contenido">
+              <h3 class="servicioItem--title">Servicio de carga de mercancía</h3>
+              <p class="servicioItem--text">Tenemos años de experiencia con servicio de Servicio de carga. Sabemos que es importante llegar a su destino a tiempo y con comodidad, y eso es lo que le garantizamos. Estamos orgullosos del equipo con que contamos y del arduo trabajo que implica trasladarlo por todo el territorio de Ogíjares sin importar el tráfico. Invertimos el tiempo que sea necesario en comunicación y preparativos para que llegue seguro a su destino. No dude en llamarnos para obtener más información o hacer una reservación.</p>
+            </div>
+          </div>
+        </div>
+        <button class="servicios__bnt" id="btnContacto2">Contactanos</button>
+      </div>
     </main>
     <footer class="footer">
       <p>©2022 por TRANSPORT PUGA EXPRESS S.L.</p>

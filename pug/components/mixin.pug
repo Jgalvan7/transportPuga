@@ -5,3 +5,10 @@ mixin cajaServicio(imagen,titulo,contenido)
         .cajaServicio__contenido
             p.cajaServicio__contenido--text= contenido
             //button.servicioButton Saber mas
+
+mixin servicioItem(imagen,titulo,contenido)
+    .servicioItem
+        .servicioItem--imagen: img(src="../assets/images/" + imagen, alt="Imagen de prueba para practicar")
+        .servicioItem--contenido
+            h3.servicioItem--title= titulo
+            p.servicioItem--text= contenido
