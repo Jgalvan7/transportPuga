@@ -1,14 +1,26 @@
 mixin cajaServicio(imagen,titulo,contenido)
     .cajaServicio
         h3.cajaServicio__title= titulo
-        .cajaServicio__imagen: img(src="../assets/images/" + imagen, alt="Imagen de prueba para practicar")
+        .cajaServicio__imagen: img(src="../assets/images/" + imagen, alt="")
         .cajaServicio__contenido
             p.cajaServicio__contenido--text= contenido
             //button.servicioButton Saber mas
 
 mixin servicioItem(imagen,titulo,contenido)
     .servicioItem
-        .servicioItem--imagen: img(src="../assets/images/" + imagen, alt="Imagen de prueba para practicar")
+        .servicioItem--imagen: img(src="../assets/images/" + imagen, alt="")
         .servicioItem--contenido
             h3.servicioItem--title= titulo
             p.servicioItem--text= contenido
+
+mixin cajaValoraciones(cliente,comentario,valoracion)
+    .valueCard
+        p.valueCard__coment= comentario
+        h3.valueCard__client= cliente
+
+mixin cajaFlota(imagen,titulo,texto)
+    .boxFlota
+        .boxFlota__imagen: img(src="../assets/images/" + imagen, alt="")
+        .boxFlota__contenido
+            h3.boxFlota__contenido--title= titulo
+            p.boxFlota__contenido--text= texto

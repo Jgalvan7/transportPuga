@@ -1,4 +1,12 @@
 extend components/template.pug
 block Content
     main
-        #modal.hidden
+        .container__flota
+            h3 Nuestra Flota de Transportes
+            p Nuestra flota nos hace ser uno de los mejores servicios de transporte en el sector/área.
+            p Siempre limpio y cómodo, disponemos del vehículo perfecto para lo que precise.
+            p Si necesita algo en particular no dude en rellenar el formulario y le responderemos brevemente resolviendo todas sus dudas.
+            h3 Modelos disponibles
+            +cajaFlota("ducato.jpg","SUV ESTANDAR","¿Quiere que su traslado sea tranquilo y relajante? Ésta es la opción perfecta. Todos los vehículos de nuestra flota de SUV estándar incluyen un sistema de entretenimiento con TV, DVD y reproductor de música, así como ventanas y seguros eléctricos para garantizar su seguridad. Nuestro SUV estándar tiene espacio para muchas piezas de equipaje y, como prometemos con todos nuestros vehículos, está excepcionalmente limpio por dentro y por fuera.")
+            +cajaFlota("ducato_suv.jpg","SEDAN ESTANDAR","Nuestro increíble Sedán estándar le garantizará un viaje placentero hasta su destino. Todos nuestros vehículos son aptos para cualquier tipo de viaje y ocasión, y ofrecen todo lo que puedan necesitar los pasajeros. Disponible con tracción delantera y tracción total, su trayecto será cómodo sin importar el tipo de clima en que viaje. Contáctenos para conocer más sobre nuestros vehículos.")
+            button#btnContacto.flota__bnt Contactanos

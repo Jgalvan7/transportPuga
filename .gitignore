@@ -1,0 +1,5 @@
+prepros.config
+pug/
+sass/
+html/index2.html
+.env

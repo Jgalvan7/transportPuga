@@ -65,7 +65,7 @@ body {
     @include media(desktop-s) {
         background-image: url(../assets/images/bgPuga.png);
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
     }
 }
 

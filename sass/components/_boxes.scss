@@ -66,7 +66,7 @@
             flex-direction: row-reverse;
         }
     }
-    @include media(tablet-s) {
+    @include media(desktop-s) {
         &--imagen {
             max-width: 500px;
         }
@@ -74,5 +74,31 @@
             max-width: 500px;
         }
     }
+}
 
+.valueCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    min-height: 150px;
+    margin: 10px auto;
+    padding: 10px;
+    $color-shadow: cambiarColor($color-claro,0.5);
+    box-shadow: 3px 4px 5px 2px $color-shadow;
+    border-radius: 5px;
+    background-image: url(../assets/images/bgPuga.png);
+    &__client {
+
+    }
+    &__coment {
+        margin-bottom: 0;
+        text-align: center;
+    }
+    @include media(tablet-s) {
+        margin: 10px 10px;
+        width: 100%;
+        max-width: 320px;
+    }
 }

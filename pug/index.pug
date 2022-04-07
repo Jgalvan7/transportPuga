@@ -1,25 +1,6 @@
 extend components/template.pug
 block Content
     main
-        #modal.hidden
-            form#formContacto.formContacto
-                .container__logo--img
-                    img(src="../assets/images/Logo.png", alt="Logo Transport Puga Express SL")
-                br
-                h3 Formulario de contacto:
-                br
-                input#cliente.campos(type="text", name="cliente", placeholder="Persona de contacto *")
-                input#empresa.campos(type="text", name="empresa", placeholder="Nombre de la empresa *")
-                .campos--contacto
-                    input#telefono(type="text", name="telefono", placeholder="Teléfono *")
-                    input#email(type="text", name="email", placeholder="Email *")
-                p.camposObligatorios * Campos de contacto obligatorios
-                label Motivo de contacto:
-                textarea#coment(name="comentario", cols="39", rows="5")
-                br
-                .acciones
-                    button#sendContacto.container__bnt Enviar formulario
-                    button#cerrarModal.container__bnt Cerrar sin enviar
         .container__hero
             .contenido__hero
                 h1.contenido__hero--title Servicio de Transporte Profesional
@@ -40,7 +21,10 @@ block Content
                 +cajaServicio("red_truck.png","Servicio de carga de mercancía","Sabemos que es importante llegar a su destino a tiempo y con comodidad, y eso es lo que le garantizamos.")
         .container__comentarios
             h2.container__comentarios--title Valoraciones
-            #comentBox.container__comentarios--boxes
+            .container__comentarios--boxes
+                +cajaValoraciones("J. Lopez","Empresa muy responsable y rápida! Muchas gracias!")
+                +cajaValoraciones("C. Jiménez","Chicos muy apañados , me han traído varios electrodomésticos y me los han instalado correctamente.")
+                +cajaValoraciones("S. Dávila","Servicio profesional y rápido, compré una televisión contratando el servicio exprés, en dos horas lo tenía en casa!")
         .container__contacto
             .container__contacto--text
                 h3.container__contacto--title ¡Queremos saber de usted!

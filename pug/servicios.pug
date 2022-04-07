@@ -1,25 +1,6 @@
 extend components/template.pug
 block Content
     main
-        #modal.hidden
-            form#formContacto.formContacto
-                .container__logo--img
-                    img(src="../assets/images/Logo.png", alt="Logo Transport Puga Express SL")
-                br
-                h3 Formulario de contacto:
-                br
-                input#cliente.campos(type="text", name="cliente", placeholder="Persona de contacto *")
-                input#empresa.campos(type="text", name="empresa", placeholder="Nombre de la empresa *")
-                .campos--contacto
-                    input#telefono(type="text", name="telefono", placeholder="Teléfono *")
-                    input#email(type="text", name="email", placeholder="Email *")
-                p.camposObligatorios * Campos de contacto obligatorios
-                label Motivo de contacto:
-                textarea#coment(name="comentario", cols="39", rows="5")
-                br
-                .acciones
-                    button#sendContacto.container__bnt Enviar formulario
-                    button#cerrarModal.container__bnt Cerrar sin enviar
         .container__servicios
             .container__servicios--intro
                 h2 Servicios que brindamos
